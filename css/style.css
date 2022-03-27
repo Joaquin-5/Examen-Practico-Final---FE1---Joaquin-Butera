@@ -1,0 +1,149 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header #navbar nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+header #navbar nav ul a {
+    text-decoration: none;
+    color: #242E52;
+}
+
+.button {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px;
+    background-color: #F3603B;
+    border-radius: 50px;
+}
+
+main {
+    margin: 0 10%;
+}
+
+#banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner-container #banner1 h1 {
+    color: #232C50;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+}
+
+#about h2 {
+    color: #232851;
+}
+
+#about #list .item .title-number {
+    display: flex;
+}
+
+#about #list .item .title-number h3 {
+    color: #323851;
+}
+
+#about #list .item .title-number .number-item {
+    margin-right: 15px;
+    background-color: #F3603B;
+    color: #FFFFFF;
+    border-radius: 30px;
+    padding: 10px 25px;
+} 
+
+#about #list .item p {
+    color: #B3B2B7;
+}
+
+#feedback h2{
+    text-align: center;
+    color: #242E53;
+}
+
+#feedback #card-container {
+    display: flex;
+}
+
+#feedback .button-container {
+    text-align: center;
+}
+
+#feedback #card-container .card {
+    text-align: center;
+    background-color: #FAFAFA;
+}
+
+#join {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F3613C;
+}
+
+#join h2 {
+    color: #FFFFFF;
+}
+
+#join #button-white {
+    text-decoration: none;
+    color: #F3603B;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1E1E26;
+}
+
+footer .footer-nav ul{
+    list-style: none;
+    color: #FFFFFF;
+}
+
+footer #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer #form #input-text {
+    padding: 10px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+}
+
+footer #form #input-submit {
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #F3603B;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+}
+
+footer #form p {
+    color: #8C8C94;
+}

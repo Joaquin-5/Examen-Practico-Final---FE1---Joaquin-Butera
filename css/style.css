@@ -1,3 +1,8 @@
+*::selection {
+    color: #FFFFFF;
+    background-color: #F3603B;
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -7,15 +12,19 @@ body {
 }
 
 header {
-    margin-top: 2%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 2% 10%;
+}
+
+header #navbar {
+    width: 40%;
 }
 
 header #navbar nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
 }
 
@@ -24,12 +33,20 @@ header #navbar nav ul a {
     color: #242E52;
 }
 
+header #navbar nav ul a:hover {
+    color: #8C8C94;
+}
+
 .button {
     text-decoration: none;
     color: #FFFFFF;
     padding: 10px;
     background-color: #F3603B;
     border-radius: 50px;
+}
+
+.button:hover {
+    background-color: #F3603B70;
 }
 
 main {
@@ -78,10 +95,13 @@ main {
 
 #about #list {
     width: 42%;
+    display: flex;
+    flex-direction: column;
 }
 
 #about #list .item .title-number {
     display: flex;
+    align-items: center;
 }
 
 #about #list .item .title-number h3 {
@@ -96,13 +116,10 @@ main {
     padding: 10px 25px;
 } 
 
-#about #list .item .title-number .title-item {
-    margin-top: 4.5%;
-}
-
 #about #list .item p {
     color: #B3B2B7;
-    margin-left: 13.8%;
+    position: relative;
+    left: 13.8%;
 }
 
 #feedback {
@@ -161,11 +178,15 @@ main {
     border-radius: 50px;
 }
 
+#join #button-white:hover {
+    background-color: #FFFFFF70;
+}
+
 footer {
     display: flex;
     justify-content: space-around;
     background-color: #1E1E26;
-    padding: 40px;
+    padding: 4% 40px;
 }
 
 footer #contact-container {
@@ -175,12 +196,23 @@ footer #contact-container {
     align-items: center;
 }
 
-footer #contact-container .contact {
+footer #contact-container #contact {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 110%;
+}
+
+footer #contact-container #contact a i{
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+footer #contact-container #contact a i:hover {
+    color: #F3613C;
 }
 
 footer .footer-nav ul{
+    height: 100%;
     list-style: none;
     color: #FFFFFF;
     display: flex;
@@ -191,6 +223,10 @@ footer .footer-nav ul{
 footer .footer-nav ul li a{
     text-decoration: none;
     color: #FFFFFF;
+}
+
+footer .footer-nav ul li a:hover {
+    color: #F3603B;
 }
 
 footer #form {
@@ -213,6 +249,11 @@ footer #form #input-submit {
     outline: none;
     border: none;
     border-radius: 50px;
+    cursor: pointer;
+}
+
+footer #form #input-submit:hover {
+    background-color: #F3603B70;
 }
 
 footer #form p {

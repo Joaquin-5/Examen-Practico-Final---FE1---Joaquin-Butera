@@ -1,3 +1,6 @@
+
+/* Ancho de mi pantalla: 1920px*/
+
 *::selection {
     color: #FFFFFF;
     background-color: #F3603B;
@@ -37,6 +40,10 @@ header #navbar nav ul a:hover {
     color: #8C8C94;
 }
 
+header #navbar #hamburger-menu-container #hamburger-menu {
+    display: none;
+}
+
 .button {
     text-decoration: none;
     color: #FFFFFF;
@@ -47,6 +54,11 @@ header #navbar nav ul a:hover {
 
 .button:hover {
     background-color: #F3603B70;
+}
+
+.button::selection {
+    background-color: #FFFFFF;
+    color: #F3613C;
 }
 
 main {
@@ -119,7 +131,7 @@ main {
 #about #list .item p {
     color: #B3B2B7;
     position: relative;
-    left: 13.8%;
+    left: 13.8%; 
 }
 
 #feedback {
@@ -163,6 +175,11 @@ main {
     align-items: center;
     background-color: #F3613C;
     padding: 40px;
+}
+
+#join h2::selection {
+    background-color: #FFFFFF;
+    color: #F3613C;
 }
 
 #join h2 {
@@ -259,4 +276,187 @@ footer #form #input-submit:hover {
 footer #form p {
     color: #8C8C94;
     font-size: 13px;
+}
+
+@media (max-width: 375px) {
+    
+    body {
+        background-image: url('./img/bg-simplify-section-mobile.svg');
+    }
+
+    main, header {
+        margin: 0 5%;
+    }
+
+    header {
+        margin-top: 10%;
+    }
+
+    p {
+        color: #B9B9C1;
+    }
+    
+    header #navbar {
+        display: none;
+    }
+
+    header .button-container .button {
+        display: none;
+    }
+
+    header #navbar #hamburger-menu-container #hamburger-menu {
+        display: inline-block;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 15px 30px;
+    }
+
+    #banner-container {
+        margin: 0 5%;
+        margin-top: 20%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #banner-container #banner1, #banner2{
+        width: 100%;
+    }
+
+    #banner1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #banner-container #banner1 h1 {
+        font-size: 35px;
+        margin: 1% 0;
+    }
+
+    #banner-container #banner1 p {
+        font-size: 15px;
+    }
+
+    #banner-container #banner2 img {
+        width: 100%; /* corregir */
+    }
+
+    #about {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    #about #about-manage{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    #about #about-manage h2 {
+        font-size: 20px;
+    }
+
+    #about #list {
+        width: 100%;
+    }
+
+    #about #list .item p {
+        left: 0;
+    }
+
+    #about #list .item .title-number {
+        background-color: #d9c2c1;
+    }
+
+    #about #list .item .title-number h3 {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    #feedback {
+        margin-bottom: 20%;
+    }
+
+    #feedback h2 {
+        font-size: 20px;
+        margin-bottom: 20%;
+    }
+
+    #feedback #card-container {
+        margin-bottom: 30%;
+    }
+
+    #feedback #card-container .card {
+        display: none;
+    }
+
+    #feedback #card-container .card img {
+        width: 20%;
+    }
+    
+    #feedback #card-container .card p {
+        font-size: 15px;
+    }
+
+    #feedback #card-container #card-responsive {
+        display: inline-block;
+    }
+
+    #join {
+        flex-direction: column;
+        padding: 30% 0;
+    }
+
+    #join h2 {
+        text-align: center;
+        font-size: 27px;
+    }
+
+    #join .button-container #button-white {
+        font-size: 12px;
+        padding: 15px 30px;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    footer #contact-container {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        height: 150px;
+    }
+
+    footer #contact-container #contact {
+        width: 80%;
+    }
+
+    footer #contact-container #contact a i{
+        color: #FFFFFF;
+        font-size: 35px;
+    }
+
+    footer #form {
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10%;
+    }
+
+    footer #form form #input-text {
+        padding: 12px 25px;
+    }
+
+    footer #form form #input-submit {
+        padding: 12px 25px;
+    }
+
+    footer #form p {
+        position: relative;
+    }
 }

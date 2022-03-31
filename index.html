@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manage - Home</title>
-    <link rel="stylesheet" href="css/style.css">
     <!--link's de la fuente Be Vietnam-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +13,8 @@
     <link rel="shortcut icon" href="./img/logo-tab.svg">
     <!--cdn de fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--link al archivo css-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -27,6 +28,9 @@
         <section id="logo">
             <img src="./img/logo.svg" alt="logo de la empresa Manage">
         </section>
+            <section id="hamburger-menu-container">
+            <a href="#" id="hamburger-menu"><img src="./img/icon-hamburger.svg" alt="menú hamburguesa, para visualizar barra de navegación"></a>
+        </section>
         <section id="navbar">
             <nav>
                 <ul>
@@ -37,9 +41,6 @@
                     <li><a href="#">Community</a></li>
                 </ul>
             </nav>
-            <section id="hamburger-menu-container">
-                <a href="#" id="hamburger-menu"><img src="./img/icon-hamburger.svg" alt="menú hamburguesa, para visualizar barra de navegación"></a>
-            </section>
         </section>
         <section class="button-container">
             <a href="#" class="button">Get Started</a>
@@ -118,21 +119,38 @@
                     <p>“Manage allows us to provide structure and process. It keeps us organized and focused. I can´t stop recommending them to everyone i talk to!”</p>
                 </section>
             </section>
+            <section id="carrusel-container">
+                <div class="button-carrusel"></div>
+                <div class="button-carrusel checked"></div>
+                <div class="button-carrusel"></div>
+                <div class="button-carrusel"></div>
+            </section>
             <section class="button-container">
                 <a href="#" class="button">Get Started</a>
             </section>
         </section>
     </main>
 
+    
+    <!--Aside compuesto:  -->
     <aside id="join">
         <h2>Simplify hoy your team words today.</h2>
         <section class="button-container">
-            <a href="#" id="button-white">Get Started</a>
+            <a href="#" class="button white">Get Started</a>
         </section>
     </aside>
 
+
+    <!--Footer dividio en tres secciones:
+        1) Logo e íconos de contácto
+        2) Menú de navgeación y 
+        3) Formulario para actualizar la bandeja de entraday los derechos de autor
+    -->
     <footer>
         <section id="contact-container">
+            <section id="all-rights">
+                <p>Copyright 2020. All Rights Reserved</p>
+            </section>
             <section id="logo-footer">
                 <img src="./img/logo-footer.svg" alt="logo de la empresa Manage">
             </section>
@@ -144,20 +162,22 @@
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </section>
         </section>
-        <section class="footer-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        </section>
-        <section class="footer-nav">
-            <ul>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
+        <section id="footer-nav-container">
+            <section class="footer-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </section>
+            <section class="footer-nav">
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </section>
         </section>
         <section id="form">
             <form action="" method="GET">
